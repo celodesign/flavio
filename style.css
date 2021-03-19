@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+body{
+    padding: 3% 0 3% 0;
+}
+
+section{
+    width: 80% !important;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;  
+}
+
+.menu{
+    margin-right: 3%;
+}
+
+h1{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h1, h2{
+    color: #0C6E45;
+}
+
+li{
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #0C6E45;
+    color: #fff;
+    border-radius: 15px;
+}
+
+li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: #A9D044;
+}
+
+.content{
+    display: flex;
+}
+
+#area_inteiro, #area_picado, #area_premium, #area_rodela{
+    display: none;
+}
+
+.content img{
+    width: auto;
+    height: auto;
+    border: 1px solid #e0e0e0;
+    margin-right: 3%;
+    align-self: start;
+}
+
+.blocos{
+    margin-bottom: 25px;
+}
+
+.blocos h2{
+    margin-bottom: 7px;
+}
+
+.blocos p{
+    line-height: 1.4;
+    color: #7e7e7e;
+    text-align: justify;
+}
+
+.btn_embalagem{
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background-color: #0C6E45;
+}
+
+.btn_embalagem a{
+    display: block;
+    text-align: center;
+    line-height: 70px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn_embalagem:hover{
+    background-color: #A9D044;
+}   
+
+.corpo_embalagens{
+    display: flex;
+    margin-top: 20px;
+}
+
+.embalagens{
+    width: 70px;
+    margin-right: 10px;
+}
+
+.embalagens:last-child{
+    margin-right: 0;
+}
+
+.embalagens span{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1640px){
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+
+    li{
+        margin-right: 5px;
+    }
+
+    li:last-child{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 970px){
+    .menu{
+        flex-direction: column;
+        min-width: 100%;
+    }
+
+    .content{
+        flex-wrap: wrap;
+    }
+
+    li, a{
+        min-width: 100%;
+    }
+
+    #img_produto{
+        min-width: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
