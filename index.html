@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Bauhaus</title>
+    <style>
+        
+        *{
+            margin:0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .container_bauhaus{
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2%;
+        }
+
+        li{
+            margin: 0 0 17% 0;
+        }
+
+        li:last-child{
+            padding: 0;
+        }
+
+        a{
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #area1{
+            opacity: 1;
+            transition: opacity 1s !important;
+        }
+
+        .content_text{
+            width: 82%; 
+            transition: opacity 1s !important;
+            opacity: 0;
+            position: absolute;
+            z-index: 0;
+            right: 0;
+        }
+
+        .content_text p{
+            width: 90%;
+            text-align: justify;
+        }
+
+        h1{
+            margin-bottom: 1%;
+        }
+
+        @media screen and (max-width: 900px){
+            ul{
+                display: flex;
+                margin-right: auto;
+                margin-left: auto;
+                height: 20px;
+                align-items: center;
+            }
+
+            .content_text{
+                top: 10%;
+                right: 5%;
+            }
+
+            li{
+                margin: 0;
+                padding-right: 109px;
+            }
+
+            li:last-child{
+                padding-right: 0;
+            }
+        }
+
+        @media screen and (max-width: 900px){
+            ul{
+                height: 30px;
+            }
+
+            li{
+                margin: 0;
+                padding-right: 108px;
+            }
+        }
+
+        @media screen and (max-width: 790px){
+            li{
+                margin: 0;
+                padding-right: 88px;
+            }
+        }
+
+        @media screen and (max-width: 740px){
+            li{
+                margin: 0;
+                padding-right: 75px;
+            }
+        }
+
+        @media screen and (max-width: 630px){
+            li{
+                margin: 0;
+                padding-right: 54px;
+            }
+        }
+
+        @media screen and (max-width: 560px){
+            ul{
+                height: 40px;
+            }
+
+            li{
+                margin: 0;
+                padding-right: 54px;
+            }
+        }
+
+        @media screen and (max-width: 530px){
+            li{
+                margin: 0;
+                padding-right: 39px;
+            }
+        }
+
+    </style>
+    
+    <script>
+        function area1(){
+            document.getElementById("area1").style.opacity = "1";
+            document.getElementById("area2").style.opacity = "0";
+            document.getElementById("area3").style.opacity = "0";
+            document.getElementById("area4").style.opacity = "0";
+            document.getElementById("area5").style.opacity = "0";
+        }
+
+        function area2(){
+            document.getElementById("area1").style.opacity = "0";
+            document.getElementById("area2").style.opacity = "1";
+            document.getElementById("area3").style.opacity = "0";
+            document.getElementById("area4").style.opacity = "0";
+            document.getElementById("area5").style.opacity = "0"; 
+        }
+
+        function area3(){
+            document.getElementById("area1").style.opacity = "0";
+            document.getElementById("area2").style.opacity = "0";
+            document.getElementById("area3").style.opacity = "1";
+            document.getElementById("area4").style.opacity = "0";
+            document.getElementById("area5").style.opacity = "0"; 
+        }
+
+        function area4(){
+            document.getElementById("area1").style.opacity = "0";
+            document.getElementById("area2").style.opacity = "0";
+            document.getElementById("area3").style.opacity = "0";
+            document.getElementById("area4").style.opacity = "4";
+            document.getElementById("area5").style.opacity = "0"; 
+        }
+
+        function area5(){
+            document.getElementById("area1").style.opacity = "0";
+            document.getElementById("area2").style.opacity = "0";
+            document.getElementById("area3").style.opacity = "0";
+            document.getElementById("area4").style.opacity = "0";
+            document.getElementById("area5").style.opacity = "1"; 
+        }
+    </script>
+</head>
+<body>
+    <div class="container_bauhaus">
+        <ul>
+            <li><a onclick="area1();">Item 1</a></li>
+            <li><a onclick="area2();">Item 2</a></li>
+            <li><a onclick="area3();">Item 3</a></li>
+            <li><a onclick="area4();">Item 4</a></li>
+            <li><a onclick="area5();">Item 5</a></li>
+        </ul>
+
+        <div id="area1" class="content_text">
+            <h1>Titulo para inserir 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt repudiandae, eligendi amet blanditiis distinctio commodi ducimus rem inventore repellat expedita similique voluptatum odit laudantium quae minima molestiae sed deleniti voluptates?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolorum harum ex fugit consectetur vero ipsum tempora. Ipsa ipsum, facilis corporis eos ab dolorem quia tempore asperiores possimus iste at.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero doloribus at maiores mollitia esse laudantium quae, accusantium culpa earum, ipsa similique sunt beatae error illo aliquid quia, voluptatem molestiae maxime?
+            </p>
+        </div>
+
+        <div id="area2" class="content_text">
+            <h1>Titulo para inserir 2</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt repudiandae, eligendi amet blanditiis distinctio commodi ducimus rem inventore repellat expedita similique voluptatum odit laudantium quae minima molestiae sed deleniti voluptates?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolorum harum ex fugit consectetur vero ipsum tempora. Ipsa ipsum, facilis corporis eos ab dolorem quia tempore asperiores possimus iste at.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero doloribus at maiores mollitia esse laudantium quae, accusantium culpa earum, ipsa similique sunt beatae error illo aliquid quia, voluptatem molestiae maxime?
+            </p>
+        </div>
+
+        <div id="area3" class="content_text">
+            <h1>Titulo para inserir 3</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt repudiandae, eligendi amet blanditiis distinctio commodi ducimus rem inventore repellat expedita similique voluptatum odit laudantium quae minima molestiae sed deleniti voluptates?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolorum harum ex fugit consectetur vero ipsum tempora. Ipsa ipsum, facilis corporis eos ab dolorem quia tempore asperiores possimus iste at.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero doloribus at maiores mollitia esse laudantium quae, accusantium culpa earum, ipsa similique sunt beatae error illo aliquid quia, voluptatem molestiae maxime?
+            </p>
+        </div>
+
+        <div id="area4" class="content_text">
+            <h1>Titulo para inserir 4</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt repudiandae, eligendi amet blanditiis distinctio commodi ducimus rem inventore repellat expedita similique voluptatum odit laudantium quae minima molestiae sed deleniti voluptates?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolorum harum ex fugit consectetur vero ipsum tempora. Ipsa ipsum, facilis corporis eos ab dolorem quia tempore asperiores possimus iste at.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero doloribus at maiores mollitia esse laudantium quae, accusantium culpa earum, ipsa similique sunt beatae error illo aliquid quia, voluptatem molestiae maxime?
+            </p>
+        </div>
+
+        <div id="area5" class="content_text">
+            <h1>Titulo para inserir 5</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt repudiandae, eligendi amet blanditiis distinctio commodi ducimus rem inventore repellat expedita similique voluptatum odit laudantium quae minima molestiae sed deleniti voluptates?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolorum harum ex fugit consectetur vero ipsum tempora. Ipsa ipsum, facilis corporis eos ab dolorem quia tempore asperiores possimus iste at.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero doloribus at maiores mollitia esse laudantium quae, accusantium culpa earum, ipsa similique sunt beatae error illo aliquid quia, voluptatem molestiae maxime?
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
