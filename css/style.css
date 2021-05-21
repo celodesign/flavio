@@ -706,11 +706,11 @@ footer button i, footer button span{
 
 /*---------------------------------------------*/
 
-/* Responsive */
+    /* Responsive */
 
 @media (max-width:1280px){
 
-/* Topo */
+    /* Topo */
 
     #whatsapp-medias{
         display: flex;
@@ -812,7 +812,7 @@ footer button i, footer button span{
         margin: auto;
     }
 
-/* Location */
+    /* Location */
 
     .un-padding{
         flex-direction: column;
@@ -857,7 +857,7 @@ footer button i, footer button span{
         background-color: green;
     }
 
-/* The Odontoblanco */
+    /* The Odontoblanco */
 
     #content-odonto{    
         flex-wrap: nowrap;
@@ -951,7 +951,7 @@ footer button i, footer button span{
         width: 120px;
     }
 
-/* Team and News */
+    /* Team and News */
 
     #team-news{
         flex-direction: column;
@@ -979,7 +979,7 @@ footer button i, footer button span{
         background-color: brown;
     }
 
-/* The Odontoblanco */
+    /* The Odontoblanco */
 
     #content-odonto{
         flex-direction: column;
@@ -1038,7 +1038,7 @@ footer button i, footer button span{
         background-color: blue;
     }
 
-/* Links */
+    /* Links */
 
     .box-links{
         width: 100%;
@@ -1049,7 +1049,7 @@ footer button i, footer button span{
         margin-bottom: 10px;
     }
 
-    /* A Odontoblanco */
+    /* The Odontoblanco */
 
     #cir-gra{
         width: 210px;
@@ -1144,7 +1144,7 @@ footer button i, footer button span{
 
 @media (max-width:680px){
 
-    /* A Odontoblanco */
+    /* The Odontoblanco */
 
     #cir-gra{
         width: 180px;
@@ -1163,7 +1163,7 @@ footer button i, footer button span{
 
 @media (max-width:620px){
 
-    /* A Odontoblanco */
+    /* The Odontoblanco */
     
     #cir-gra{
         width: 150px;
@@ -1189,7 +1189,12 @@ footer button i, footer button span{
 
 @media (max-width:540px){
 
-    /* A Odontoblanco */
+    /* The Odontoblanco */
+
+    #content-odonto img{
+        width: 100%;
+        height: auto;
+    }
     
     #cir-gra{
         width: 120px;
@@ -1233,4 +1238,78 @@ footer button i, footer button span{
         margin-bottom: 30px;
     }
     
+}
+
+@media (max-width: 405px){
+
+    /* Top */
+
+    #whatsapp-medias{
+        flex-direction: column;
+    }
+
+    #whatsapp-medias button, #medias{
+        justify-content: center;
+    }
+
+    #medias{
+        margin-top: 20px;
+    }
+
+    /* The Odontoblanco */
+
+    #cir-gra, #cir-peq, #dente{
+        display: none;
+    }
+
+    /* Team and news */
+
+    .content-news{
+        flex-direction: column;
+    }
+
+    .content-news img{
+        width: 100%;
+        height: auto;
+    }
+
+    .texts-news{
+        margin-top: 20px;
+    }
+
+    /* Odontomóvel */
+
+    #odonto-movel h1{
+        font-size: 45px;
+    }
+
+    #content-odonto-movel{
+        flex-direction: column;
+    }
+
+    #icons-odonto-movel{
+        margin-top: 10px;
+    }
+
+    /* Footer */
+
+    #footer-rights{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer-rights span+span{
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 305px) {
+    
+    /* Team and News */
+
+    #area-team{
+        flex-direction: column;
+    }
+
 }
